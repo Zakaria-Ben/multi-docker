@@ -1,5 +1,5 @@
 FROM node:16-alpine as builder
-WORKID '/app'
+WORKIDR '/app'
 COPY ./package.json ./
 RUN npm install
 COPY . .
