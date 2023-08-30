@@ -17,7 +17,7 @@ after_success:
 # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 #Take those images and push the to Dockerhub
-  - docker push zakaria06/multi-client:latest
+  - docker push zakaria06/multi-client
   - docker push zakaria06/multi-nginx
   - docker push zakaria06/multi-server
   - docker push zakaria06/multi-worker
